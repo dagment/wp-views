@@ -13,4 +13,5 @@ define('wpviews_plugin_file_path',__FILE__);
 
 
 
-//require_once my_path ."billing-multiple.php";
+require_once wpviews_path ."/includes/admin.php";
+require_once wpviews_path ."/includes/frontend.php";
