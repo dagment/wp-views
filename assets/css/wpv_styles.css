@@ -1,0 +1,70 @@
+.archive-item {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.archive-item .item-link {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #FFFC16;
+    opacity: 0;
+    transition: .25s;
+}
+
+.archive-item .item-link:hover {
+    opacity: .8;
+    transition: .25s;
+}
+
+.archive-item .title {
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    top: calc(50% - 40px);
+    opacity: 0;
+    transition: .25s;
+    pointer-events: none;
+}
+
+.archive-item .more-link {
+    position: absolute;
+    background: #000;
+    border-radius: 5px;
+    color: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 50px;
+    transition: .25s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.archive-item:hover .title,
+.archive-item:hover .more-link {
+    opacity: 1;
+    transition: .25s;
+}
+
+.archive-item .background-image {
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.archive-item .background-image img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+}
