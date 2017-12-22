@@ -13,6 +13,12 @@ define('wpviews_url',plugin_dir_url(__FILE__));
 require_once wpviews_path ."/includes/admin.php";
 require_once wpviews_path ."/includes/frontend.php";
 
+//function wpv_register_options(){
+//
+//}
+//register_activation_hook(wpviews_plugin_file_path, 'wpv_register_options' );
+
+
 // Підтягуємо шаблон для архіву
 function get_archive_views_template( $archive_template ) {
     $archive_template = dirname( __FILE__ ) . '/templates/archive_grid.php';
